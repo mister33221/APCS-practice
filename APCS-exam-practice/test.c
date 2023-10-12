@@ -151,4 +151,44 @@
 // no.18 done
 
 // no.19
+// int main(){
+//     int A[5], B[5], i, c;
+//     for(i = 1; i <= 4; i++){
+//         A[i] = 2 + i * 4;
+//         B[i] = i * 5;
+//     }
+//     c = 0;
+//     for(i = 1; i <= 4; i++){
+//         if(B[i] > A[i]){
+//             c = c + ( B[i] % A[i] );
+//         } else {
+//             c = 1;
+//         }
+//     }
+//     printf("%d\n", c);
+// }
+// Ans: 4
+
+// no.20
+// int g(int a){
+//     if(a>1){
+//         printf("%d\n", a);
+//         return g(a-2) + 3;
+//     } else {
+//         return a;
+//     }
+// }
+
+// int main(){
+//     int a = 13;
+//     printf("%d\n", g(a));
+//     return 0;
+// }
+// Ans: 13 11 9 7 5 3 1 停止 -> 3 * 6 + 1 = 19
+
+// no.21 跳過
+
+// no.22 
+
+// 
 
