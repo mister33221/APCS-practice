@@ -35,10 +35,20 @@ public class Q4 {
     }
 
     public static Integer[][] reverse(Integer[][] matrix){
+
+        // get column list
+
+        // reverse the column list
+
+        // set back to matrix
+
         return matrix;
     }
 
     public static Integer[][] spin(Integer[][] matrix){
+
+
+
         return matrix;
     }
 
