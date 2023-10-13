@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -32,24 +33,33 @@ public class Q4 {
         System.out.println(Arrays.deepToString(matrix));
         System.out.println(lastLine);
 
+        matrix = reverse(matrix);
+        System.out.println(Arrays.deepToString(matrix));
+
     }
 
     public static Integer[][] reverse(Integer[][] matrix){
 
-        // get column list
+        Integer[][] reversedMatrix = new Integer[matrix.length][matrix[0].length];
 
-        // reverse the column list
+        for (int i = 0; i < matrix.length; i++) {
+            reversedMatrix[i] = matrix[matrix.length - 1 - i];
+        }
 
-        // set back to matrix
-
-        return matrix;
+        return reversedMatrix;
     }
 
-    public static Integer[][] spin(Integer[][] matrix){
+    public static Integer[][] transpose(Integer[][] matrix){
 
+        Integer[][] transposedMatrix = new Integer[matrix[0].length][matrix.length];
 
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                transposedMatrix[j][i] = matrix[i][j];
+            }
+        }
 
-        return matrix;
+        return transposedMatrix;
     }
 
 }
