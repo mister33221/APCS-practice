@@ -1,9 +1,8 @@
 package org.example;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Q3 {
+public class P5 {
 
     public static void main(String[] args){
 

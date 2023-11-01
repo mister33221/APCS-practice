@@ -1,10 +1,9 @@
 package org.example;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Q4 {
+public class P7Undone {
 
     public static void main(String[] args){
 
@@ -33,9 +32,11 @@ public class Q4 {
         System.out.println(Arrays.deepToString(matrix));
         System.out.println(lastLine);
 
-        matrix = reverse(matrix);
-        System.out.println(Arrays.deepToString(matrix));
+//        matrix = reverse(matrix);
+//        System.out.println(Arrays.deepToString(matrix));
 
+        matrix = transpose(matrix);
+        System.out.println(Arrays.deepToString(matrix));
     }
 
     public static Integer[][] reverse(Integer[][] matrix){
@@ -55,7 +56,7 @@ public class Q4 {
 
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
-                transposedMatrix[j][i] = matrix[i][j];
+                transposedMatrix[j][matrix.length - 1 - i] = matrix[i][j];
             }
         }
 

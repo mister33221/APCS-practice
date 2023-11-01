@@ -1,11 +1,10 @@
 package org.example;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
 
-public class Q2 {
+public class P3 {
 
     public static void main(String[] args){
 
